@@ -17,7 +17,28 @@
 
 /*----------------------------------------------------------------------*/
 
-#d1{ 
+.dice{
+    display: flex;
+}
+#d1{     
+    justify-content: center;
+    align-items: center;
+}
+#d2, #d3, #d4, #d5, #d6{
+    justify-content: space-around;
+}
+#d2, #d3{
+    align-items: center
+}
+#d4 div, #d6 div, #d5 div{  
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-around;     
+}
+#d5 div:nth-of-type(2){
+    align-self: center;
+}
+/* #d1{ 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,7 +91,7 @@
     flex-direction: column; 
     justify-content: space-around; 
     
-}
+} */
 
 
 
